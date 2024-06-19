@@ -26,5 +26,7 @@ public class MunculkanSampah : MonoBehaviour
             Instantiate(objekSampah[random], transform.position, Quaternion.identity);
             timer = 0f;
         }
+
+        TingkatLevel.instance.KenaikanLevel();
     }
 }

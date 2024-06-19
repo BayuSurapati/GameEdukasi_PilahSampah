@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ScenePilahSampah.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 5c170734db242d54eb25f7f9752ff776
+  - enabled: 1
+    path: Assets/Scenes/LevelSelector.unity
+    guid: ca8721138150e4942a2eb42fcb60562f
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 37ff7840f78f085449854553321d6bd4
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
     guid: 94b6033678b7609448ef36a63bf4dba4
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 215baabf1a1782844b19dcc861f12baa
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 69abaf0e3f55aa24a982f8f0dd1ca3a2
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 2cda990e2423bbf4892e6590ba056729

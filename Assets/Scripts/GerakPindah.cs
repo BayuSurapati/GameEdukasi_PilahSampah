@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class GerakPindah : MonoBehaviour
 {
-    float speed = 1f;
+    public static GerakPindah instance;
+
+    public float speed = 1f;
     public Sprite[] sprites;
     
 
     private Vector3 screenPoint;
     private Vector3 offset;
     private float firstY;
-    
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +31,8 @@ public class GerakPindah : MonoBehaviour
     {
         float move = (speed * Time.deltaTime * -1f) + transform.position.x;
         transform.position = new Vector3(move,transform.position.y);
+
+        //TingkatLevel.instance.KenaikanLevel();
     }
 
     void OnMouseDown()

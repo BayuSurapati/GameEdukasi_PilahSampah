@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DeteksiSampah : MonoBehaviour
 {
+    public static DeteksiSampah instance;
+
     public string nameTag;
     public AudioClip audioCorrect;
     public AudioClip audioFalse;
@@ -13,7 +15,14 @@ public class DeteksiSampah : MonoBehaviour
     public AudioSource mediaPlayerFalse;
     public Text scoreText;
 
-    [SerializeField] int scoreEnter;
+    public int scoreEnter;
+    public int totalScore;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +54,6 @@ public class DeteksiSampah : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        totalScore = scoreEnter;
     }
 }
