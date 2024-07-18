@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 public class BatasAkhirSampah : MonoBehaviour
 {
     public string sceneOver;
+
+    public AudioClip failedClip;
+    public AudioSource failedAudio;
     // Start is called before the first frame update
     void Start()
     {
-        
+        failedAudio = gameObject.AddComponent<AudioSource>();
+        failedAudio.clip = failedClip;
     }
 
     // Update is called once per frame
@@ -22,5 +26,6 @@ public class BatasAkhirSampah : MonoBehaviour
     {
         Destroy(other.gameObject);
         SceneManager.LoadScene(sceneOver);
+        failedAudio.Play();
     }
 }

@@ -398,6 +398,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneOver: GameOver
+  failedClip: {fileID: 8300000, guid: 1f2c2ddd9e0a5e94f9be504fece2ef97, type: 3}
+  failedAudio: {fileID: 0}
 --- !u!61 &670475619
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -804,5 +806,9 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1284475197}
+    - target: {fileID: 4083351254865190453, guid: b8832578bcedc3f40b4fe5c8ecd4017b, type: 3}
+      propertyPath: scoreEnter
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8832578bcedc3f40b4fe5c8ecd4017b, type: 3}

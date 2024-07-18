@@ -41,6 +41,7 @@ public class DeteksiSampah : MonoBehaviour
             scoreText.text = DataScorer.score.ToString();
             Destroy(collision.gameObject);
             mediaPlayerCorrect.Play();
+            totalScore++;
         }
         else
         {
@@ -48,12 +49,13 @@ public class DeteksiSampah : MonoBehaviour
             scoreText.text = DataScorer.score.ToString();
             Destroy(collision.gameObject);
             mediaPlayerFalse.Play();
+            totalScore--;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        totalScore = scoreEnter;
+        
     }
 }
